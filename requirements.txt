@@ -1,0 +1,4 @@
+potassium>=0.0.9
+torch
+transformers
+https://github.com/pyannote/pyannote-audio/archive/refs/heads/develop.zip

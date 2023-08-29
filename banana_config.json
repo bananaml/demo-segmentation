@@ -1,0 +1,27 @@
+{
+    "version": "1",
+    "inputs": [
+        {
+            "name": "option",
+            "description": "Choose a segmentation to perform on the audio file",
+            "type": "options",
+            "options": ["voice_activity_detection","overlapped_speech_detection", "instantaneous_speaker_counting", "speaker_change_detection"],
+            "required": true,
+            "default": "voice_activity_detection"
+        },
+        {
+            "name": "audio",
+            "type": "file",
+            "mimes": ["audio/wav"],
+            "required": true
+        }
+    ],
+    "output": {
+        "image": {
+            "type": "image",
+            "source": "base64",
+            "path": "output"
+        }
+    }
+}
+
